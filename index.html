@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <script defer src="./script/main.js"></script>
+    <script defer src="./scripts/main.js"></script>
 
 </head>
 
@@ -33,7 +33,7 @@
                     </div>
                     <div class="navbar-end">
                         <img src="./assets/coin.png" alt="Logo">
-                        <span class="text-charcol text-xl mx-2 font-medium">5000</span><span
+                        <span id="currentBalance" class="text-charcol text-xl mx-2 font-medium">5000</span><span
                             class="text-charcol text-xl font-medium">BDT</span>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <div class="card-body lg:w-1/2">
                         <div class="flex w-36 items-center rounded-lg bg-[#1111110D] p-2.5">
                             <img src="./assets/coin.png" alt="Logo" class="w-6 h-6 mr-2" />
-                            <span class="text-lg">0 BDT</span>
+                            <span class="text-lg"><span id="amountNoakhali">0</span> BDT</span>
                         </div>
                         <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                         <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
@@ -66,8 +66,9 @@
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts
                             and making a positive impact on the lives of those in need.</p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button class="btn !bg-[#B4F461]">Donate Now</button>
+                        <input id="donationNoakhali" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
+                        <button id="btnNoakhali" class="btn !bg-[#B4F461]">Donate Now</button>
                     </div>
                 </div>
                 <div class="card lg:card-side bg-base-100 shadow-xl flex lg: mb-8">
@@ -77,7 +78,7 @@
                     <div class="card-body lg:w-1/2">
                         <div class="flex w-36 items-center rounded-lg bg-[#1111110D] p-2.5">
                             <img src="./assets/coin.png" alt="Logo" class="w-6 h-6 mr-2" />
-                            <span class="text-lg">0 BDT</span>
+                            <span class="text-lg"><span id="amountFeni">0</span> BDT</span>
                         </div>
                         <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                         <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
@@ -85,8 +86,9 @@
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts
                             and making a positive impact on the lives of those in need.</p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button class="btn !bg-[#B4F461]">Donate Now</button>
+                        <input id="donationFeni" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
+                        <button id="btnFeni" class="btn !bg-[#B4F461]">Donate Now</button>
                     </div>
                 </div>
                 <div class="card lg:card-side bg-base-100 shadow-xl flex lg: mb-8">
@@ -96,7 +98,7 @@
                     <div class="card-body lg:w-1/2">
                         <div class="flex w-36 items-center rounded-lg bg-[#1111110D] p-2.5">
                             <img src="./assets/coin.png" alt="Logo" class="w-6 h-6 mr-2" />
-                            <span class="text-lg">0 BDT</span>
+                            <span class="text-lg"><span id="amountQuota">0</span> BDT</span>
                         </div>
                         <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                         <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
@@ -104,8 +106,9 @@
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts
                             and making a positive impact on the lives of those in need.</p>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button class="btn !bg-[#B4F461]">Donate Now</button>
+                        <input id="donationQuota" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
+                        <button id="btnQuota" class="btn !bg-[#B4F461]">Donate Now</button>
                     </div>
                 </div>
             </div>
