@@ -69,8 +69,10 @@ function inputValidation(donationAmount) {
 }
 
 // display confirmation
-function display() {
-    alert('Congrates! You have donated Successfully')
+
+function openModal() {
+    const modal = document.getElementById('my_modal_2');
+    modal.showModal(); // Opens the modal
 }
 
 // store history
@@ -113,7 +115,7 @@ document.getElementById('btnNoakhali').addEventListener('click', () => {
 
         document.getElementById('donationNoakhali').value = '';
 
-        display();
+        openModal();
     }
 
 })
@@ -135,7 +137,7 @@ document.getElementById('btnFeni').addEventListener('click', () => {
 
         document.getElementById('donationFeni').value = '';
 
-        display();
+        openModal();
     }
 
 })
@@ -157,6 +159,6 @@ document.getElementById('btnQuota').addEventListener('click', () => {
 
         document.getElementById('donationQuota').value = '';
 
-        display();
+        openModal();
     }
 })
