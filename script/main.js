@@ -35,3 +35,26 @@ window.addEventListener('scroll', () => {
         header.classList.remove('backdrop-blur-lg', 'bg-opacity-90');
     }
 });
+
+
+// navigate to blog page
+document.getElementById('blogPage').addEventListener('click', function () {
+    window.location.href = '../pages/blog.html';  // Replace with your target HTML page
+});
+
+
+
+// toggle display between donation and transaction history
+function showSection(sectionId) {
+    // Hide both sections
+    document.getElementById('donationSection').style.display = 'none';
+    document.getElementById('historySection').style.display = 'none';
+
+    // Show the selected section
+    document.getElementById(sectionId).style.display = 'block';
+}
+
+// Initialize by showing the donation section by default
+window.onload = function () {
+    showSection('donationSection');
+};
