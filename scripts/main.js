@@ -69,7 +69,32 @@ function inputValidation(donationAmount) {
 }
 
 // display confirmation
+function display() {
+    alert('Congrates! You have donated Successfully')
+}
 
+// store history
+let historyDatabase = [];
+
+function history(amount, cause, time) {
+    historyDatabase = [...historyDatabase, `${amount} Taka is ${cause}. Date: ${time}`]
+    displayHistory();
+}
+
+// display history
+function displayHistory() {
+    const historyView = document.getElementById('history');
+    historyView.innerHTML = '';
+    for (let message of historyDatabase) {
+        historyView.innerHTML += `<p>${message}</p>`
+    }
+}
+
+// current date and time
+function currentDateTime() {
+    let currentDate = new Date();
+    return currentDate;
+}
 
 // calculation
 
@@ -81,10 +106,14 @@ document.getElementById('btnNoakhali').addEventListener('click', () => {
         const amountNoakhali = document.getElementById('amountNoakhali');
         currentBalance.textContent = parseFloat(currentBalance.textContent) - donationAmount;
 
+        // store to history
+        history(donationAmount, 'Donated for Flood at Noakhali, Bangladesh', currentDateTime())
 
         amountNoakhali.textContent = parseFloat(amountNoakhali.textContent) + donationAmount;
 
         document.getElementById('donationNoakhali').value = '';
+
+        display();
     }
 
 })
@@ -98,12 +127,15 @@ document.getElementById('btnFeni').addEventListener('click', () => {
         const amountFeni = document.getElementById('amountFeni');
         currentBalance.textContent = parseFloat(currentBalance.textContent) - donationAmount;
 
+        // store to history
+        history(donationAmount, 'Donated for Flood Relief in Feni, Bangladesh', currentDateTime())
 
         amountFeni.textContent = parseFloat(amountFeni.textContent) + donationAmount;
 
-        document.getElementById('donationNoakhali').value = '';
 
         document.getElementById('donationFeni').value = '';
+
+        display();
     }
 
 })
@@ -118,10 +150,13 @@ document.getElementById('btnQuota').addEventListener('click', () => {
         currentBalance.textContent = parseFloat(currentBalance.textContent) - donationAmount;
 
 
+        // store to history
+        history(donationAmount, 'Donated for Injured in the Quota Movement', currentDateTime())
+
         amountQuota.textContent = parseFloat(amountQuota.textContent) + donationAmount;
 
         document.getElementById('donationQuota').value = '';
 
-
+        display();
     }
 })
