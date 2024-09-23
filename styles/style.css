@@ -6,3 +6,7 @@
 .text-charcol {
     color: rgba(17, 17, 17, 0.70)
 }
+
+.text-light-gray {
+    color: rgba(17, 17, 17, 0.70);
+}
