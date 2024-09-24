@@ -39,7 +39,10 @@ window.addEventListener('scroll', () => {
 
 // navigate to blog page
 document.getElementById('blogPage').addEventListener('click', function () {
-    window.location.href = '../pages/blog.html';  // Replace with your target HTML page
+    // Relative path that work on local environment but not on github page
+    // window.location.href = '../pages/blog.html';  
+    // Absolute path that does not work on locally but work on github page
+    window.location.href = '/pages/blog.html';
 });
 
 
