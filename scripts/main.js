@@ -42,7 +42,7 @@ document.getElementById('blogPage').addEventListener('click', function () {
     // Relative path that does work on github page
     // window.location.href = '../pages/blog.html';  
     // Absolute path 
-    window.location.href = 'https://ichrahman.github.io/assignment5/pages/blog.htm';
+    window.location.href = 'https://ichrahman.github.io/assignment5/pages/blog.html';
 });
 
 
