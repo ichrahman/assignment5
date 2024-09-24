@@ -39,10 +39,10 @@ window.addEventListener('scroll', () => {
 
 // navigate to blog page
 document.getElementById('blogPage').addEventListener('click', function () {
-    // Relative path that work on local environment but not on github page
+    // Relative path that does work on github page
     // window.location.href = '../pages/blog.html';  
-    // Absolute path that does not work on locally but work on github page
-    window.location.href = '/pages/blog.html';
+    // Absolute path 
+    window.location.href = 'assignment5/pages/blog.html';
 });
 
 
